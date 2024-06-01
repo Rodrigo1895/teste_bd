@@ -2,8 +2,6 @@ variable "projectName" {}
 
 variable "vpcId" {}
 
-variable "vpcCidrBlocks" {}
-
 variable "aurora_cluster_pedido_master_password" {}
 
 variable "aurora_cluster_pedido_endpoint" {}
