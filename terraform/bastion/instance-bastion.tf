@@ -9,4 +9,6 @@ resource "aws_instance" "bastion" {
   tags = {
     Name = "${var.projectName}-bastion-rds"
   }
+
+  depends_on = [aws_security_group.bastion-sg, aws_key_pair.key-bastion]
 }
