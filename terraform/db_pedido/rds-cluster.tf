@@ -8,5 +8,5 @@ resource "aws_rds_cluster" "aurora-cluster-pedido" {
   master_password        = var.password
   deletion_protection    = false
   skip_final_snapshot    = true
-  vpc_security_group_ids = [aws_security_group.aurora-sg.id]
+  vpc_security_group_ids = [var.aurora_sg_id]
 }
